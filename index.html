@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水母的家</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="container">
+                <div class="navbar">
+                    <div class="row">
+                        <h1><span class="jellyfish">水母</span>的網頁</h1>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#links" class="nav-link btn">聯絡</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link btn">關於</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link btn" onclick="donate()">抖內?</a>
+                            </li>
+                        </ul>
+                        <a href="#!" class="menu-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="container">
+                <div class="header">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="header-item">
+                                <div class="img-container">
+                                    <div class="picture"></div>
+                                </div>
+                                <div class="title">
+                                    <div class="title-text">水母</div>
+                                    <div class="title-para">沒有道德<br>就不會被道德綁架</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12">
+                            <div class="para">
+                                <div class="para-text">
+                                    一隻可愛的水母<br>
+                                    喜歡玩電腦, 畫圖, 還有聽音樂<br>
+                                    希望能夠認識更多朋友<br>
+                                    所以就做了這個網站<br>
+                                </div>
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="main">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="experience">
+                                <div class="title">經歷</div>
+                                <div class="para">
+                                    <div class="para-text">
+                                        <ul class="item">
+                                            <li>某地名國小畢業</li>
+                                            <li>某私立國中畢業</li>
+                                            <li>某地名大學五專部在學</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="photo-album">
+                                <div class="title">自己畫的東西</div>
+                                <div class="photo-frame">
+                                    <div class="photo"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="work">
+                                <div class="title">作品集</div>
+                                <div class="para">
+                                    <div class="para-text">
+                                        <ul class="item">
+                                            <li><a href="https://smalljellyfish.github.io/Graduation_Topics/">我做不完的畢業專題</a></li>
+                                            <li><a href="#!">佔位用...</a></li>
+                                            <li><a href="#!">佔位用...</a></li>
+                                            <li><a href="#!">佔位用...</a></li>
+                                            <li><a href="#!">佔位用...</a></li>
+                                            <li><a href="#!">佔位用...</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="links" id="links">
+                        <div class="social-software">
+                            <ul class="item">
+                                <li style="list-style-image: url('icon/discord-svgrepo-com.svg');"><a href="#!">Discord -- 最常使用的 - big_jellyfish</a></li>
+                                <li style="list-style-image: url('icon/github-svgrepo-com.svg');"><a href="https://github.com/smalljellyfish">Github -- 為了專題而弄的 - smalljellyfish</a></li>
+                                <li style="list-style-image: url('icon/line-message-software-svgrepo-com.svg');"><a href="#!">Line -- 應付別人用的 - 0905261127</a></li>
+                                <li style="list-style-image: url('icon/facebook-svgrepo-com.svg');"><a href="https://www.facebook.com/profile.php?id=100018150638678&locale=zh_TW">Facebook -- 老人東西</a></li>
+                                <li style="list-style-image: url('icon/mail-open-svgrepo-com.svg');"><a href="mailto:bigjellyfish1127@gmail.com">Mail -- 辦正事用的 - bigjellyfish1127@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer">
+                            <div class="footer-text">©2024-4-17 by big_jellyfish</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="js/vendor/jquery/jquery-3.7.1.min.js"></script>
+<script>
+    $('.menu-toggle').click(function(){
+        $('.nav').toggleClass('active');
+        $(this).toggleClass('active');
+        $('.nav .nav-link').toggleClass('btn');
+    });
+    $('.nav-link').click(function(){
+        $('.nav').removeClass('active');
+        $('.menu-toggle').removeClass('active');
+        $('.nav .nav-link').toggleClass('btn');
+    });
+</script>
+</html>
