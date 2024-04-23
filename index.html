@@ -141,12 +141,12 @@
     $('.menu-toggle').click(function(){
         $('.nav').toggleClass('active');
         $(this).toggleClass('active');
-        $('.nav .nav-link').toggleClass('btn');
+        $('.nav .nav-link').removeClass('btn');
     });
     $('.nav-link').click(function(){
         $('.nav').removeClass('active');
         $('.menu-toggle').removeClass('active');
-        $('.nav .nav-link').toggleClass('btn');
+        $('.nav .nav-link').addClass('btn');
     });
 </script>
 </html>
