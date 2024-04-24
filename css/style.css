@@ -144,6 +144,27 @@ a{
     background-color: #8A9EEB;
     color: #000;
 }
+/*image*/
+.image-container{
+    width: 100%;
+}
+.image-container:before{
+    content:  ' ';
+    display: block;
+    width: 100%;
+    padding-top: 75%;
+}
+.image-container .image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 /* background-color */
 .wrapper{
     width: 100%;
@@ -317,12 +338,14 @@ a{
 }
 /* experience */
 .experience{
+    height: 314px;
     background-color: rgba(137,235,219,0.5);
     padding: 20px;
     margin: 15px;
     border: 2px dashed #968AEB;
     border-radius: 10px;
-    margin-right: 5px;
+    margin-right: 7.5px;
+    margin-left: 15px;
 }
 .main [class^="col-"]{
     padding: 0;
@@ -342,11 +365,14 @@ a{
 }
 /* work */
 .work{
+    height: 314px;
     background-color: rgba(137,235,219,0.5);
     padding: 20px;
     margin: 15px;
     border: 2px dashed #968AEB;
     border-radius: 10px;
+    margin-right: 15px;
+    margin-left: 7.5px;
 }
 .work .title{
     text-align: center;
@@ -362,110 +388,59 @@ a{
     margin: 20px;
     list-style-image: url("../icon/link-minimalistic-svgrepo-com.svg");
 }
-/* photo album */
+/* photo-album */
 .photo-album{
     background-color: rgba(137,235,219,0.5);
     padding: 20px;
-    margin: 15px;
     border: 2px dashed #968AEB;
     border-radius: 10px;
-    margin-right: 5px;
+    margin:0;
 }
-.photo-album .title{
+.photo-album .topTitle{
     text-align: center;
     font-size: 30px;
     line-height: 30px;
     margin: 20px;
 }
-.photo-album .photo-frame{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.photo-album .list-item .image-container:before{
+    padding-top: 100%;
 }
-.photo-album .photo-frame .photo{
-    width: 580px;
-    height: 267px;
-    margin: 10px;
-    border: 5px #968AEB;
+.photo-album .list-item .title{
+    font-size: 18px;
+    color: #968AEB;
+    line-height: 24px;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+.photo-album .list-item .subtitle{
+    font-size: 14px;
+    color: black;
+}
+.photo-album .owl-carousel .owl-item{
+    border: 2px solid #968AEB;
     border-style: dashed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
-    animation: photoRotation 30s infinite;
-}
-
-@keyframes photoRotation {
-    0% {
-        width: 580px;
-        height: 267px;
-        background-image: url("../pic/四季映姬.png");
-    }
-    10% {
-        width: 580px;
-        height: 267px;
-        background-image: url("../pic/鍵山雛cos.png");
-    }
-    20% {
-        width: 580px;
-        height: 267px;
-        background-image: url("../pic/天子cos.png");
-    }
-    30% {
-        width: 580px;
-        height: 267px;
-        background-image: url("../pic/チルノcos.png");
-    }
-    40% {
-        width: 580px;
-        height: 267px;
-        background-image: url("../pic/害羞水母.png");
-    }
-    50% {
-        width: 580px;
-        height: 267px;
-        background-image: url("../pic/四季映姬.png");
-    }
-    60% {
-        width: 580px;
-        height: 267px;
-        background-image: url("../pic/鍵山雛cos.png");
-    }
-    70% {
-        width: 580px;
-        height: 267px;
-        background-image: url("../pic/天子cos.png");
-    }
-    80% {
-        width: 580px;
-        height: 267px;
-        background-image: url("../pic/チルノcos.png");
-    }
-    100% {
-        width: 580px;
-        height: 267px;
-        background-image: url("../pic/害羞水母.png");
-    }
 }
 /* links */
 .links{
-    background-color: rgba(137,235,219,0.5);
-    padding: 20px;
-    border: 2px dashed #968AEB;
-    border-radius: 10px;
     margin: 0 15px;
 }
 .links .social-software{
-    text-align: left;
+    background-color: rgba(137,235,219,0.5);
+    border: 2px dashed #968AEB;
+    border-radius: 10px;
+    padding: 0 20px;
+    text-align: justify;
     font-size: 25px;
     line-height: 35px;
-    margin: 20px;
 }
 .links .social-software .item{
     display: inline-block;
     padding: 20px;
     color: #000;
+    margin: 20px;
 }
 /* footer */
 .footer{

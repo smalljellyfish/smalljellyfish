@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>水母的家</title>
+    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="vendor/jquery-3.7.1.min.js"></script>
+    <script src="vendor/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
     <script src="js/index.js" defer></script>
 </head>
 <body>
@@ -19,7 +23,7 @@
                                 <a href="#links" class="nav-link btn">聯絡</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#!" class="nav-link btn">關於</a>
+                                <a href="#!" class="nav-link btn" onclick="about()">關於</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#!" class="nav-link btn" onclick="donate()">抖內?</a>
@@ -40,9 +44,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-12">
                             <div class="header-item">
-                                <div class="img-container">
-                                    <div class="picture"></div>
-                                </div>
+                                <div class="picture"></div>
                                 <div class="title">
                                     <div class="title-text">水母</div>
                                     <div class="title-para">沒有道德<br>就不會被道德綁架</div>
@@ -80,12 +82,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="photo-album">
-                                <div class="title">自己畫的東西</div>
-                                <div class="photo-frame">
-                                    <div class="photo"></div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-lg-6 col-md-12">
                             <div class="work">
@@ -103,7 +99,79 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="photo-album">
+                    <div class="topTitle">自己畫的東西</div>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div>
+                                <a href="#!" class="list-item">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('pic/チルノcos.png');"></div>
+                                    </div>
+                                    <div class="preview">
+                                        <h5 class="title">チルノ</h5>
+                                        <h6 class="subtitle">水母好可愛</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <a href="#!" class="list-item">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('pic/四季映姬.png');"></div>
+                                    </div>
+                                    <div class="preview">
+                                        <h5 class="title">四季映姬</h5>
+                                        <h6 class="subtitle">水母真的好可愛</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <a href="#!" class="list-item">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('pic/天子cos.png');"></div>
+                                    </div>
+                                    <div class="preview">
+                                        <h5 class="title">比那名居天子</h5>
+                                        <h6 class="subtitle">好胖的水母</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <a href="#!" class="list-item">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('pic/害羞水母.png');"></div>
+                                    </div>
+                                    <div class="preview">
+                                        <h5 class="title">水母本人</h5>
+                                        <h6 class="subtitle">他就是水母</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <a href="#!" class="list-item">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('pic/鍵山雛cos.png');"></div>
+                                    </div>
+                                    <div class="preview">
+                                        <h5 class="title">鍵山雛</h5>
+                                        <h6 class="subtitle">水母是東方廚</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,17 +204,4 @@
         </footer>
     </div>
 </body>
-<script src="js/vendor/jquery/jquery-3.7.1.min.js"></script>
-<script>
-    $('.menu-toggle').click(function(){
-        $('.nav').toggleClass('active');
-        $(this).toggleClass('active');
-        $('.nav .nav-link').removeClass('btn');
-    });
-    $('.nav-link').click(function(){
-        $('.nav').removeClass('active');
-        $('.menu-toggle').removeClass('active');
-        $('.nav .nav-link').addClass('btn');
-    });
-</script>
 </html>
