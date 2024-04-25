@@ -297,7 +297,7 @@ a{
     border: 5px #968AEB;
     border-style: dashed;
     border-radius: 50%;
-    background-image: url("../pic/害羞水母.png");
+    background-image: url("../pic/picture/害羞水母.png");
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.3s;
@@ -422,6 +422,12 @@ a{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: all 0.1s;
+}
+.photo-album .owl-carousel .owl-item:hover{
+    width: 150%;
+    height: 150%;
+    box-shadow: 0 0 10px #705ff2;
 }
 /* links */
 .links{
