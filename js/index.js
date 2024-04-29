@@ -26,7 +26,7 @@ $(document).ready(function(){
         $('.nav .nav-link').addClass('btn');
     });
     // slider 滾動相簿
-    $(".owl-carousel").owlCarousel({
+    $('.owl-carousel').owlCarousel({
         margin:10,
         nav:true,
         items:4,
@@ -41,5 +41,15 @@ $(document).ready(function(){
                 items:4
             }
         }
+    });
+    
+    // one page scroll
+    $('.js-nav').onePageNav({
+        currentClass:'active',
+        changeHash:false,
+        scrollSpeed:750,
+        scrollThreshold:0.5,
+        filter:'',
+        easing:'swing'
     });
 });
