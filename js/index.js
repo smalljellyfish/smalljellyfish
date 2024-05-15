@@ -52,4 +52,41 @@ $(document).ready(function(){
         filter:'',
         easing:'swing'
     });
+
+    //scrollreveal
+    ScrollReveal().reveal('.js-fedInBottom',{
+        duration:800,
+        origin:'bottom',
+        distance:'50px',
+        delay:200,
+        reset:true
+    });
+    ScrollReveal().reveal('.js-fedInTop',{
+        duration:800,
+        origin:'top',
+        distance:'50px',
+        delay:200,
+        reset:true
+    });
+    ScrollReveal().reveal('.js-fedInLeft',{
+        duration:800,
+        origin:'left',
+        distance:'50px',
+        delay:200,
+        reset:true
+    });
+    ScrollReveal().reveal('.js-fedInRight',{
+        duration:800,
+        origin:'right',
+        distance:'50px',
+        delay:200,
+        reset:true
+    });
+    // ScrollReveal().reveal('.service-item',{
+    //     duration:800,
+    //     origin:'bottom',
+    //     distance:'50px',
+    //     reset:true,
+    //     interval:300
+    // });
 });

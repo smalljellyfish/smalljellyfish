@@ -181,7 +181,7 @@ a{
 .navbar{
     background-color: rgba(137, 188, 235,0.8);
     border-bottom: 3px dashed #968AEB;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     backdrop-filter: blur(10px);
 }
 .navbar h1{
@@ -465,7 +465,7 @@ a{
 .footer{
     background-color: rgba(137,188,235,0.8);
     border-top: 3px dashed #968AEB;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     margin: 10px 0;
     padding: 20px;
     backdrop-filter: blur(10px);
@@ -475,4 +475,41 @@ a{
     font-size: 16px;
     line-height: 20px;
     padding: 10px;
+}
+/* masonry */
+.masonry-row{
+    margin: 0 -16px;
+}
+.masonry-col{
+    width: 33.3333%;
+    padding: 0 16px;
+}
+
+/* gallery-picture */
+.gallery{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.gallery-item{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.5);
+    margin:12px 0;
+    padding: 16px;
+    backdrop-filter: blur(25px);
+}
+.gallery-item img{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.gallery-item h5{
+    font-size: 16px;
+    line-height: 25px;
+    color: black;
+}
+.gallery-item p{
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
 }
