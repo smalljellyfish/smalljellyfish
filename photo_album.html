@@ -12,6 +12,7 @@
     <script src="vendor/onepagenav/jquery.nav.js"></script>
     <script src="vendor/masonry/masonry.pkgd.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
     <script src="js/index.js" defer></script>
 </head>
 <body>
@@ -156,11 +157,14 @@
     </div>
 </body>
 <script>
-    $(document).ready(function(){
-        //masonry
-        $('.masonry-row').masonry({
+$(document).ready(function(){
+    //masonry
+    var $grid = $('.masonry-row');
+    $grid.imagesLoaded(function() {
+        $grid.masonry({
             itemSelector:'.masonry-col',
         });
     });
+});
 </script>
 </html>
