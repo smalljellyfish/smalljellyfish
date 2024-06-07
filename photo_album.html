@@ -163,6 +163,8 @@ $(document).ready(function(){
     $grid.imagesLoaded(function() {
         $grid.masonry({
             itemSelector:'.masonry-col',
+            originTop: true,
+            percentPosition: true,
         });
     });
 });

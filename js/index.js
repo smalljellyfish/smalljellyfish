@@ -25,6 +25,7 @@ $(document).ready(function(){
         $('.menu-toggle').removeClass('active');
         $('.nav .nav-link').addClass('btn');
     });
+
     // slider 滾動相簿
     $('.owl-carousel').owlCarousel({
         margin:10,
