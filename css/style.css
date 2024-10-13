@@ -306,7 +306,7 @@ a{
     border-radius: 10px;
     margin-top: 10px;
     margin-right: -10px;
-    background-color:rgba(137,235,219,0.5);
+    background-color:rgb(124, 144, 152 ,0.5);
     backdrop-filter: blur(10px);
 }
 .header .para .para-text{
@@ -320,7 +320,7 @@ a{
 /* experience */
 .experience{
     height: 314px;
-    background-color: rgba(137,235,219,0.5);
+    background-color: rgb(124, 144, 152 ,0.5);
     padding: 20px;
     margin: 15px;
     border: 2px dashed #7B9098;
@@ -348,7 +348,7 @@ a{
 /* work */
 .work{
     height: 314px;
-    background-color: rgba(137,235,219,0.5);
+    background-color: rgb(124, 144, 152 ,0.5);
     padding: 20px;
     margin: 15px;
     border: 2px dashed #7B9098;
@@ -373,7 +373,7 @@ a{
 }
 /* photo-album */
 .photo-album{
-    background-color: rgba(137,235,219,0.5);
+    background-color: rgb(124, 144, 152 ,0.5);
     padding: 20px;
     border: 2px dashed #7B9098;
     border-radius: 10px;
@@ -419,7 +419,7 @@ a{
     backdrop-filter: blur(10px);
 }
 .links .social-software{
-    background-color: rgba(137,235,219,0.5);
+    background-color: rgb(124, 144, 152 ,0.5);
     border: 2px dashed #7B9098;
     border-radius: 10px;
     padding: 0 20px;
