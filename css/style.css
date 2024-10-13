@@ -136,13 +136,13 @@ a{
 }
 /* 元件 */
 .btn{
-    border: 1px solid #B8D0ED;
+    border: 1px solid #1D3D5E;
     border-radius: 10px;
     color: #000;
 }
 .btn:hover{
-    background-color: #B8D0ED;
-    color: #000;
+    background-color: #1D3D5E;
+    color: #B8D0ED;
 }
 /* background-color */
 .wrapper{
@@ -152,7 +152,7 @@ a{
 }
 /* nav */
 .navbar{
-    background-color: #1D3D5E;
+    background-color: #B8D0ED;
     border-bottom: 3px dashed #7B9098;
     /* border-radius: 10px; */
     backdrop-filter: blur(10px);
@@ -292,7 +292,7 @@ a{
     font-size: 30px;
     line-height: 30px;
     margin: 20px 0;
-    color: #73563F;
+    color: #9d8c56;
 }
 .header-item .title .title-para{
     font-size: 16px;
@@ -435,7 +435,7 @@ a{
 }
 /* footer */
 .footer{
-    background-color: #1D3D5E;
+    background-color: #B8D0ED;
     border-top: 3px dashed #7B9098;
     /* border-radius: 10px; */
     margin: 10px 0;
