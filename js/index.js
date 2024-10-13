@@ -26,6 +26,14 @@ $(document).ready(function(){
         $('.nav .nav-link').addClass('btn');
     });
 
+    // $('.menu-toggle').on('click',function(){
+    //     $(this).toggleClass('active');
+    //     $('.navbar .nav').toggleClass('active');
+    // })
+    // $('.nav-link').on('click',function(){
+    //     $('.menu-toggle').removeClass('active');
+    //     $('.navbar .nav').removeClass('active');
+    // })
     // slider 滾動相簿
     $('.owl-carousel').owlCarousel({
         margin:10,
